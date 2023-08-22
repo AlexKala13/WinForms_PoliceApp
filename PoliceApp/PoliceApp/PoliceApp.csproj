@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A188ACED-6DCD-4EFD-A619-BB4F54D26974}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PoliceApp</RootNamespace>
+    <AssemblyName>PoliceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cargrid_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cargrid_form.Designer.cs">
+      <DependentUpon>cargrid_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detailedInfo_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detailedInfo_form.Designer.cs">
+      <DependentUpon>detailedInfo_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="log_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="log_form.Designer.cs">
+      <DependentUpon>log_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grid_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grid_form.Designer.cs">
+      <DependentUpon>grid_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Police_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Police_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Police_dbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Police_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Police_dbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Police_dbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Police_dbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Police_dbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selector_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selector_form.Designer.cs">
+      <DependentUpon>selector_form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cargrid_form.resx">
+      <DependentUpon>cargrid_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detailedInfo_form.resx">
+      <DependentUpon>detailedInfo_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log_form.resx">
+      <DependentUpon>log_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grid_form.resx">
+      <DependentUpon>grid_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="selector_form.resx">
+      <DependentUpon>selector_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Police_dbDataSet.xsc">
+      <DependentUpon>Police_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Police_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Police_dbDataSet.xss">
+      <DependentUpon>Police_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet1.xsc">
+      <DependentUpon>Police_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Police_dbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Police_dbDataSet1.xss">
+      <DependentUpon>Police_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet2.xsc">
+      <DependentUpon>Police_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Police_dbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Police_dbDataSet2.xss">
+      <DependentUpon>Police_dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet3.xsc">
+      <DependentUpon>Police_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Police_dbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Police_dbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Police_dbDataSet3.xss">
+      <DependentUpon>Police_dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

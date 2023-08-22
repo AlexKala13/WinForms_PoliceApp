@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\bin\Debug\PoliceApp.exe.config
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\bin\Debug\PoliceApp.exe
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\bin\Debug\PoliceApp.pdb
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.Properties.Resources.resources
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.csproj.GenerateResource.cache
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.exe
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.pdb
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.log_form.resources
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.grid_form.resources
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.detailedInfo_form.resources
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.selector_form.resources
+C:\Users\pc\source\repos\PoliceApp\PoliceApp\obj\Debug\PoliceApp.cargrid_form.resources
